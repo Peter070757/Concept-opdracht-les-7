@@ -1,1 +1,601 @@
- /*  Hier wordt de CSS Concept opdracht les 7 gemaakt.  */
+/*------------------------------------------ CSS Concept opdracht les 7 ---------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;900&display=swap');
+
+/*   CSS reset  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+body {
+    width: 100vw;
+}
+
+/*  variable primary-color  */
+:root {
+    --primary-color-purple: #5722CD;
+    --primary-color-bleu: #4845E4;
+    --primary-color-pink: #ED4385;
+    --primary-color-black: #0C0C0C; /* voor standaard tekst */
+    --primary-color-purple-light: #F2F0FF; /* voor grote zwevende woorden "hello"en "services" */
+    --primary-color-grey-light: #F3F6F9; /* voor grote zwevende woorden "hello"en "services" */
+    --primary-color-grey: #7A7A7A; /* voor de service-regel tekst" */
+}
+
+/*------------------- Reusable class ----------------------*/
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--------------------- Begin header CSS -----------------------*/
+
+/*  Clusteren  */
+header, h1, h2 {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0.2em;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 26px;
+}
+
+.outer-container {
+    background: var(--primary-color-purple);
+    background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);
+    height: 600px;
+}
+
+.navbar > ul {
+    gap: 60px;
+    margin: 50px 0 100px 0;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-section {
+    gap: 40px;
+}
+
+.cta-btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: var(--primary-color-pink);
+    border: none;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 2px 40px;
+    cursor: pointer;
+}
+
+.cta-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.squiggle-line-stripe {
+    margin-top: 30px;
+}
+
+.triangle-bottom-left {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 98px 0 0 100vw;
+    border-color: transparent transparent transparent #fff;
+    margin-top: -98px;
+}
+
+/*-------------End header CSS------------------*/
+
+/*-------------Begin main CSS------------------*/
+.triangle-top-right {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 98px 0;
+    border-color: transparent #fff transparent transparent;
+    margin-top: 100px;
+    margin-bottom: -168px;
+    z-index: 1;
+}
+
+.inner-container .column {
+    height: 580px;
+}
+
+.hero2-section {
+    gap: 30px;
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 24px;
+    padding: 200px 30px 30px 30px;
+
+}
+
+.question {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 50px 30px 30px 30px;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: var(--primary-color-bleu);
+    font-weight: 500;
+}
+
+ul > li {
+    list-style: none;
+}
+
+/*------------- Begin "hallo" big fonts ------------------------*/
+.hero2-section div {
+    width: 650px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.hero2-section div::after {
+    position: relative;
+    content: "hello";
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: var(--primary-color-purple-light);
+    font-size: 340px;
+    display: block;
+    width: 0;
+    height: 0;
+    padding-left: 30px;
+    z-index: -1;
+}
+
+/*------------------End big fonts -------------------------*/
+
+/*------------- Begin "work" big fonts ------------------------*/
+.work {
+    width: 650px;
+    height: 70px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-right: 300px;
+    margin-top: 0;
+}
+
+.work::after {
+    position: relative;
+    content: "work";
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 500px;
+    display: block;
+    width: 0;
+    height: 0;
+    padding-right: 30px;
+    margin-top: 70px;
+    z-index: 1;
+}
+
+/*------------------End big fonts -------------------------*/
+
+/*-------------Begin session WORK CSS----------------------*/
+.background {
+    background-color: #f3f6f9;
+    width: 100vw;
+}
+
+.top-work {
+    z-index: 2;
+}
+
+.shadow {
+    box-shadow: 0 24px 24px -5px #d3d1d1;
+}
+
+/*--------------------------- flexcontainer ----------------------------*/
+.flex-container {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 60px;
+}
+
+.flex-container > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 24px;
+    width: 500px;
+    height: 300px;
+    margin-top: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.flex-container > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: -70px;
+}
+
+.flex-container > img {
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 350px;
+}
+
+.flex-container > div > img {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.flex-container > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.flex-container > div > a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+}
+
+/*-------------------- flex-container 2 --------------------------------*/
+.flex-container2 {
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.flex-container2 > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 20px;
+    width: 600px;
+    height: 300px;
+    margin-top: 130px;
+    margin-right: 20px;
+    margin-left: 15px;
+    z-index: 3;
+}
+
+.flex-container2 > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.flex-container2 > img {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.flex-container2 > div > img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.flex-container2 > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.flex-container2 > div > a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+}
+
+/*--------------------------- flexcontainer 3 ----------------------------*/
+.flex-container3 {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 200px;
+
+}
+
+.flex-container3 > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 20px;
+    width: 500px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.flex-container3 > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: -80px;
+}
+
+.flex-container3 > img {
+    width: 40%;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.flex-container3 > div > img {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.flex-container3 > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.flex-container3 > div > a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------- Link animation ----------------------------- */
+div a,
+div a:link,
+div a:visited {
+    font-size: 16px;
+    color: var(--primary-color-purple);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*---------------------- Begin animation ------------------------------- */
+div a::after {
+    display: block;
+    content: "";
+    width: 3%;
+    height: 0.04em;
+    margin-left: 140px;
+    background-color: var(--primary-color-purple);
+    transition: width .2s ease-in-out;
+    position: relative;
+    bottom: 10px;
+}
+
+/*----------------------------- End animation------------------------------ */
+div a:hover::after {
+    /* alle andere properties worden behouden, we overschrijven alléén de width property */
+    width: 4em;
+}
+
+/* einde transition */
+
+/*------------------- Under construction page --------------------------------*/
+.under-construction {
+    background: var(--primary-color-purple);
+    background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);
+    height: 750px;
+}
+
+.under-construction > img {
+    margin-top: 50px;
+    border: 1px solid var(--primary-color-grey-light);
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.under-construction > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: var(--primary-color-grey-light);
+    margin-top: 50px;
+}
+
+.under-construction > p > a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 50px;
+}
+
+/*------------------------- Under construction end --------------------------------*/
+
+/*------------------- Begin CSS content services------------------------------------*/
+.section3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.services p {
+    color: var(--primary-color-black);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 20px;
+
+}
+
+.services2 {
+    border: 0.03em solid black;
+    background: white;
+    box-shadow: 0 14px 14px -2px #d3d1d1;
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    margin: 30px;
+}
+
+.services2 > h2 {
+    color: var(--primary-color-purple);
+}
+
+.services2 h3 {
+    color: var(--primary-color-purple);
+    padding: 0;
+
+}
+
+.services-float {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: var(--primary-color-purple-light);
+    font-size: 340px;
+    margin-bottom: -200px;
+}
+
+/*----------------------Content footer -----------------------*/
+.outer-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--primary-color-purple);
+    background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);
+    height: 800px;
+    width: 100vw;
+    margin-top: 50px;
+}
+
+.triangle-top-right2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 98px 0;
+    border-color: transparent #fff transparent transparent;
+    margin-top: 0;
+    margin-bottom: -168px;
+    z-index: 1;
+}
+
+footer > h1 {
+    margin-top: 250px;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 20px;
+}
+
+footer > div > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 50px;
+    background-color: #0C0C0C;
+    width: 100vw;
+    height: 60px;
+}
+
+.cta-btn-send {
+
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: var(--primary-color-pink);
+    border: none;
+    color: white;
+    padding: 20px 70px 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+footer > p {
+    background-color: black;
+    height: 50px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.outer-container2 > p {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
