@@ -1,7 +1,7 @@
-/*  Hier wordt de CSS Concept opdracht les 7 gemaakt.  */
+/*------------------------------------------ CSS Concept opdracht les 7 ---------------------------------------------*/
 
-/*@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;900&display=swap');
+
 /*   CSS reset  */
 * {
     box-sizing: border-box;
@@ -9,10 +9,9 @@
     padding: 0;
 }
 
-/*-------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------*/
 body {
     width: 100vw;
-
 }
 
 /*  variable primary-color  */
@@ -40,7 +39,8 @@ body {
     justify-content: center;
 }
 
-/*-------------Begin header CSS------------------*/
+/*--------------------- Begin header CSS -----------------------*/
+
 /*  Clusteren  */
 header, h1, h2 {
     font-family: 'Merriweather', serif;
@@ -58,38 +58,19 @@ header p {
     font-size: 26px;
 }
 
-/*header > div {*/
-
-/*}*/
-
 .outer-container {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
     background: var(--primary-color-purple);
     background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);
     height: 600px;
 }
 
-/*  descendant selector  */
-/*.navbar ul {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-
-/*  child selector  */
 .navbar > ul {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
     gap: 60px;
     margin: 50px 0 100px 0;
-
 }
 
 .navbar li {
     list-style: none;
-
 }
 
 .navbar a {
@@ -98,9 +79,6 @@ header p {
 }
 
 .hero-section {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
     gap: 40px;
 }
 
@@ -110,10 +88,8 @@ header p {
     border-radius: 30px;
     background-color: var(--primary-color-pink);
     border: none;
-    /*color: white;*/
     padding: 20px;
     text-align: center;
-
     display: inline-block;
     margin: 20px 2px 40px;
     cursor: pointer;
@@ -126,34 +102,9 @@ header p {
 
 .squiggle-line-stripe {
     margin-top: 30px;
-
 }
 
-/*.skewed {*/
-/*        position: relative;*/
-/*        bottom: -660px;*/
-/*        height: 50px;*/
-/*        width: 130%;*/
-/*        color: black;*/
-/*        background-color: white;*/
-/*        transform: rotate(3deg);*/
-/*}*/
-
-/*.triangle {*/
-/*    position: relative;*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    justify-content: center;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    color: white;*/
-/*    border-top: 30px solid red;*/
-/*    border-right: 500px solid transparent;*/
-/*    margin-top: -10px;*/
-/*}*/
-
 .triangle-bottom-left {
-    /*flex-wrap: wrap;*/
     width: 0;
     height: 0;
     border-style: solid;
@@ -164,41 +115,8 @@ header p {
 
 /*-------------End header CSS------------------*/
 
-/*------------- Begin "hallo" big fonts ------------------------*/
-
-/*.hero2-section div {*/
-/*    width: 650px;*/
-/*    height: 70px;*/
-/*    background-color: transparent;*/
-/*    border-radius: 10px;*/
-
-/*}*/
-
-/*.hero2-section div::after {*/
-/*    position: relative;*/
-/*    content: "hallo";*/
-/*    font-family: 'Roboto', sans-serif;*/
-/*    font-weight: bolder;*/
-/*    color: var(--primary-color-purple-light);*/
-
-/*    font-size: 300px;*/
-/*    display: block;*/
-/*    width: 0;*/
-/*    height: 0;*/
-/*    padding-left: -100px;*/
-/*    !*padding-bottom: 100px;*!*/
-/*    z-index: -1;*/
-/*border-top: 13px solid transparent;*/
-/*border-right: 20px solid #D84282;*/
-/*border-bottom: 13px solid transparent;*/
-
-/*}*/
-
-/*------------------End big fonts -------------------------*/
-
 /*-------------Begin main CSS------------------*/
 .triangle-top-right {
-    /*flex-wrap: wrap;*/
     width: 0;
     height: 0;
     border-style: solid;
@@ -210,13 +128,6 @@ header p {
 }
 
 .inner-container .column {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-
-    /*background-color: var(--primary-color-purple);*/
-    /*background: var(--primary-color-purple);*/
-    /*background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);*/
     height: 580px;
 }
 
@@ -234,9 +145,7 @@ header p {
     color: var(--primary-color-black);
     font-size: 24px;
     font-weight: 500;
-
     padding: 50px 30px 30px 30px;
-    /*gap: 10px;*/
 }
 
 ul > li > a {
@@ -263,16 +172,12 @@ ul > li {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     color: var(--primary-color-purple-light);
-    font-size: 240px;
+    font-size: 340px;
     display: block;
     width: 0;
     height: 0;
     padding-left: 30px;
-    /*padding-bottom: 100px;*/
     z-index: -1;
-    /*border-top: 13px solid transparent;*/
-    /*border-right: 20px solid #D84282;*/
-    /*border-bottom: 13px solid transparent;*/
 }
 
 /*------------------End big fonts -------------------------*/
@@ -285,7 +190,6 @@ ul > li {
     border-radius: 10px;
     margin-right: 300px;
     margin-top: 0;
-    /*z-index: 1;*/
 }
 
 .work::after {
@@ -300,11 +204,7 @@ ul > li {
     height: 0;
     padding-right: 30px;
     margin-top: 70px;
-    /*padding-bottom: 100px;*/
     z-index: 1;
-    /*border-top: 13px solid transparent;*/
-    /*border-right: 20px solid #D84282;*/
-    /*border-bottom: 13px solid transparent;*/
 }
 
 /*------------------End big fonts -------------------------*/
@@ -313,103 +213,170 @@ ul > li {
 .background {
     background-color: #f3f6f9;
     width: 100vw;
-    /*z-index: -2;*/
 }
 
 .top-work {
     z-index: 2;
 }
 
-.flex-container {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    flex-wrap: wrap-reverse;
-    /*background-color: #f3f6f9;*/
-    /*width: 100vw;*/
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /*z-index: 3;*/
-
-}
-
-.flex-container2 {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    flex-wrap: wrap;
-    /*background-color: #f3f6f9;*/
-    /*width: 100vw;*/
-    /*height: 600px;*/
-    /*z-index: 3;*/
-}
-
-section > div {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: center;*/
-    /*flex-wrap: wrap;*/
-    /*gap: 30px;*/
-    font-family: 'Merriweather', serif;
-    color: var(--primary-color-purple);
-    font-size: 20px;
-    /*border: 0.03em solid black;*/
-    width: 600px;
-    height: 300px;
-
-    /*padding: 50px 50px 30px 30px;*/
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 100px;
-    /*width: 900px;*/
-    z-index: 3;
-
-
-}
-
-div > h3 {
-    font-family: 'Merriweather', serif;
-    color: var(--primary-color-black);
-    font-size: 26px;
-    /*text-align: center;*/
-    margin-top: 10px;
-
-}
-
-section > img {
-    width: 40%;
-    margin-bottom: 50px;
-    margin-top: 200px;
-}
-
 .shadow {
     box-shadow: 0 24px 24px -5px #d3d1d1;
 }
 
-section > div > img {
-    /*width: 50%;*/
+/*--------------------------- flexcontainer ----------------------------*/
+.flex-container {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 60px;
+}
+
+.flex-container > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 24px;
+    width: 500px;
+    height: 300px;
+    margin-top: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.flex-container > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: -70px;
+}
+
+.flex-container > img {
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 350px;
+}
+
+.flex-container > div > img {
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.flex-container > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.flex-container > div > a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+}
+
+/*-------------------- flex-container 2 --------------------------------*/
+.flex-container2 {
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.flex-container2 > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 20px;
+    width: 600px;
+    height: 300px;
+    margin-top: 130px;
+    margin-right: 20px;
+    margin-left: 15px;
+    z-index: 3;
+}
+
+.flex-container2 > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.flex-container2 > img {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+
+.flex-container2 > div > img {
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-section > div > p {
+.flex-container2 > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.flex-container2 > div > a {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color-black);
     font-size: 24px;
+}
+
+/*--------------------------- flexcontainer 3 ----------------------------*/
+.flex-container3 {
+    flex-wrap: wrap-reverse;
+    margin-bottom: 200px;
+
+}
+
+.flex-container3 > div {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-purple);
+    font-size: 20px;
+    width: 500px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 3;
+}
+
+.flex-container3 > div > h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color-black);
+    font-size: 24px;
+    margin-top: -80px;
+}
+
+.flex-container3 > img {
+    width: 40%;
     margin-bottom: 40px;
+    margin-top: 30px;
 }
 
-section > div > a {
+.flex-container3 > div > img {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.flex-container3 > div > p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-color-black);
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.flex-container3 > div > a {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color-black);
     font-size: 24px;
 }
 
-/*  Transition  */
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------- Link animation ----------------------------- */
 div a,
 div a:link,
 div a:visited {
-    /*font-family: helvetica, sans-serif;*/
     font-size: 16px;
     color: var(--primary-color-purple);
     text-decoration: none;
@@ -417,7 +384,7 @@ div a:visited {
     font-weight: 600;
 }
 
-/* BEGINSTAAT */
+/*---------------------- Begin animation ------------------------------- */
 div a::after {
     display: block;
     content: "";
@@ -430,7 +397,7 @@ div a::after {
     bottom: 10px;
 }
 
-/* EINDSTAAT */
+/*----------------------------- End animation------------------------------ */
 div a:hover::after {
     /* alle andere properties worden behouden, we overschrijven alléén de width property */
     width: 4em;
@@ -438,7 +405,7 @@ div a:hover::after {
 
 /* einde transition */
 
-/*------------------- Under construction--------------------------------*/
+/*------------------- Under construction page --------------------------------*/
 .under-construction {
     background: var(--primary-color-purple);
     background: linear-gradient(327deg, var(--primary-color-purple) 0%, var(--primary-color-bleu) 100%);
@@ -466,7 +433,7 @@ div a:hover::after {
     margin-top: 50px;
 }
 
-/*------------------- Under construction end --------------------------------*/
+/*------------------------- Under construction end --------------------------------*/
 
 /*------------------- Begin CSS content services------------------------------------*/
 .section3 {
@@ -482,7 +449,6 @@ div a:hover::after {
     color: var(--primary-color-black);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    /*font-weight: bold;*/
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -491,23 +457,14 @@ div a:hover::after {
 }
 
 .services2 {
-
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
     border: 0.03em solid black;
     background: white;
     box-shadow: 0 14px 14px -2px #d3d1d1;
-    height: 430px;
-    width: 430px;
-    /*margin-top: 100px;*/
-    /*margin-bottom: 100px;*/
+    height: 400px;
+    width: 400px;
     padding: 30px;
-    /*background-color: white;*/
     position: relative;
     z-index: 1;
-    /*margin-left: 10px;*/
     margin: 30px;
 }
 
@@ -522,12 +479,11 @@ div a:hover::after {
 }
 
 .services-float {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     color: var(--primary-color-purple-light);
-    font-size: 200px;
-    margin-bottom: -140px;
-    /*z-index: -1;*/
-    /*background-color: #F2F0FF;*/
-
+    font-size: 340px;
+    margin-bottom: -200px;
 }
 
 /*----------------------Content footer -----------------------*/
@@ -543,7 +499,6 @@ div a:hover::after {
 }
 
 .triangle-top-right2 {
-    /*flex-wrap: wrap;*/
     width: 0;
     height: 0;
     border-style: solid;
@@ -555,7 +510,7 @@ div a:hover::after {
 }
 
 footer > h1 {
-    margin-top: 200px;
+    margin-top: 250px;
 }
 
 h4 {
@@ -628,6 +583,14 @@ footer > p {
 @media screen and (max-width: 576px) {
     h1 {
         font-size: 18px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
     }
 }
 
